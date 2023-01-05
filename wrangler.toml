@@ -9,7 +9,7 @@ compatibility_date = "2021-07-23"
 crons = ["*/2 * * * *"]
 
 [site]
-bucket = "out"
+bucket = "raphus-status"
 entry-point = "./"
 
 # uncomment and adjust following if you are not using GitHub Actions
