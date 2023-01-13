@@ -19,6 +19,7 @@ monitors:
     name: 'Raphus Social'
     description: 'Main site for Raphus Social' # default=empty
     url: 'https://raphus.social/api/v1/instance' # URL to fetch
+    linkurl: 'https://raphus.social' # URL to link
     method: HEAD # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -27,6 +28,7 @@ monitors:
     name: 'Media Storage'
     description: 'Uploaded and cached media' # default=empty
     url: 'https://files.raphus.social/Image-Source-PlusPNG.com.png' # URL to fetch
+    linkurl: 'https://raphus.social' # URL to link
     method: HEAD # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -35,6 +37,7 @@ monitors:
     name: 'Web UI'
     description: 'Web interface to Raphus Social' # default=empty
     url: 'https://assets.raphus.social/badge.png' # URL to fetch
+    linkurl: 'https://raphus.social' # URL to link
     method: HEAD # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
