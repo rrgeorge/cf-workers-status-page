@@ -6,7 +6,7 @@ settings:
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational - Loss of utility power due to major storm'
+  notAllmonitorsOperational: 'Not All Systems Operational'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Not Operational'
   monitorLabelNoData: 'No data'
@@ -39,6 +39,15 @@ monitors:
     url: 'https://raphus.social/api/v1/streaming/health' # URL to fetch
     linkurl: 'https://raphus.social' # URL to link
     method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: false # should fetch follow redirects, default=false
+    linkable: true # allows the title to be a link, default=true
+  - id: raphus-bookwyrm # unique identifier
+    name: 'BookWyrm'
+    description: 'BookWyrm @ Raphus Social' # default=empty
+    url: 'https://books.raphus.social/nodeinfo/2.0' # URL to fetch
+    linkurl: 'https://books.raphus.social' # URL to link
+    method: HEAD # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
