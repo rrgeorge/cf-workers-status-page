@@ -6,7 +6,7 @@ settings:
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
+  notAllmonitorsOperational: 'Not All Systems Operational - Loss of utility power due to major storm'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Not Operational'
   monitorLabelNoData: 'No data'
@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: raphus-web # unique identifier
-    name: 'Raphus Social - Loss of utility power due to major storm'
+    name: 'Raphus Social'
     description: 'Main site for Raphus Social' # default=empty
     url: 'https://raphus.social/api/v1/instance' # URL to fetch
     linkurl: 'https://raphus.social' # URL to link
