@@ -17,7 +17,7 @@ settings:
 monitors:
   - id: raphus-web # unique identifier
     name: 'Raphus Social'
-    description: 'Main site for Raphus Social' # default=empty
+    description: 'Primary Mastodon server for Raphus Social' # default=empty
     url: 'https://raphus.social/api/v1/instance' # URL to fetch
     linkurl: 'https://raphus.social' # URL to link
     method: HEAD # default=GET
@@ -43,8 +43,8 @@ monitors:
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
   - id: raphus-bookwyrm # unique identifier
-    name: 'BookWyrm'
-    description: 'BookWyrm @ Raphus Social' # default=empty
+    name: 'Raphus Reads'
+    description: 'BookWyrm server for Social Reading and Reviewing' # default=empty
     url: 'https://books.raphus.social/nodeinfo/2.0' # URL to fetch
     linkurl: 'https://books.raphus.social' # URL to link
     method: HEAD # default=GET
