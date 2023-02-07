@@ -18,7 +18,7 @@ monitors:
   - id: raphus-web # unique identifier
     name: 'Raphus Social'
     description: 'Primary Mastodon server for Raphus Social' # default=empty
-    url: 'https://raphus.social/api/v1/instance' # URL to fetch
+    url: 'https://raphus.social/health' # URL to fetch
     linkurl: 'https://raphus.social' # URL to link
     method: HEAD # default=GET
     expectStatus: 200 # operational status, default=200
